@@ -45,10 +45,10 @@ namespace Rubeus
                 switch (s.TagValue)
                 {
                     case 0:
-                        pvno = Convert.ToInt32(s.Sub[0].GetInteger());
+                        pvno = Convert.ToInt64(s.Sub[0].GetInteger());
                         break;
                     case 1:
-                        msg_type = Convert.ToInt32(s.Sub[0].GetInteger());
+                        msg_type = Convert.ToInt64(s.Sub[0].GetInteger());
                         break;
                     case 2:
                         foreach (AsnElt ae in s.Sub[0].Sub[0].Sub)
